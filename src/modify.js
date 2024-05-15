@@ -16,15 +16,7 @@ buttonClick.addEventListener("click", clickCounterHandler)
 // Question 2
 const keyTracker = document.querySelector('#keydown-tracker')
 const handleKeydown = (e) => {
-  // console.log(e);
-  const keyPressed = e.code
-  if (keyPressed === 'Enter'){
-    keyTracker.textContent = `You pressed Enter`
-  } else if (keyPressed === " "){
-    keyTracker.textContent = `You pressed Space`
-  } else {
-    keyTracker.textContent = `You pressed ${e.code}`
-  }
+  keyTracker.textContent = `You pressed ${e.code}`
 };
 document.body.addEventListener("keydown",handleKeydown)
 
@@ -69,5 +61,6 @@ const removeDelegator = () =>{
   delegator.removeEventListener("click", handleDelegation)
 }
 remove.addEventListener("click",removeDelegator)
-// Tai was here
+
+
 
