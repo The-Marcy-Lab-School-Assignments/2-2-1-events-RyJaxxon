@@ -1,4 +1,5 @@
 // Question 1
+/** FEEDBACK: Great job getting all test cases to pass! */
 const buttonClick = document.querySelector('#click-button')
 const clickCounterHandler = () => {
   let nums = buttonClick.dataset.clicks
@@ -50,6 +51,7 @@ const num = document.querySelector('#add-random-num')
 const addNewRandomNumber = () => {
   const listLocal = document.getElementById('random-numbers');
   const listItem = document.createElement('li');  
+  /** FEEDBACK: Make sure to add 1 at the end so that the numbers are always above 1! */
   listItem.textContent = Math.floor(Math.random() * 100);
   listLocal.append(listItem);
 };
